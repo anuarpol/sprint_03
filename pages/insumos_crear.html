@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insumos Crear</title>
+  </head>
+  <body>
+    <section>
+      
+      <h5><a href="menu_principal.html">CATALOGO DE MATERIALES</a> / <a href="insumos.html">LISTADO DE INSUMOS</a> / <a href="insumos_crear.html">CREACION DE INSUMOS</a></h5>
+      <h1>CREACIÓN DE INSUMOS</h1>
+      <fieldset>
+        <legend>INFORMACION GENERAL</legend>
+        <form action="" method="POST" autocomplete="off">
+          <label for="codcategoria">Categoria*</label> 
+          <select name="codcategoria" id="codcategoria">
+            <option value="1">Seleccione</option>
+            <option value="2">ACEROA Y ALAMRES</option>
+            <option value="3">AGREGADOS</option>
+            <option value="4">MADERA</option>
+            <option value="5">CEMENTOS</option>
+            <option value="6">INSTALACIONES HIDROSANITARIAS</option>
+            <option value="7">BLOQUES Y LADRILLOS</option>
+            <option value="8">GRIFERIAS Y ACCESORIOS</option>
+            
+          </select>
+          <br /><br />
+
+          <label for="decripcion">Descripcion</label><br />
+          <input
+            type="text"
+            id="descripcion"
+            name="descripcion"
+            placeholder="Descricion"
+            tabindex="1"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="u_medida">Unidad de Medida (U.M)</label><br />
+          <input
+            type="text"
+            id="u_medida"
+            name="u_medida"
+            placeholder="U.M."
+            tabindex="2"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="vr_unitario">Vr. Unitario</label><br />
+          <input
+            type="number"
+            id="vr_unitario"
+            name="vr_unitario"
+            placeholder="Vr Unitario"
+            tabindex="3"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="iva">% IVA</label><br />
+          <input
+            type="number"
+            id="iva"
+            name="iva"
+            placeholder="0"
+            tabindex="4"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="vr_neto">Vr. Neto</label><br />
+          <input
+            type="number"
+            id="vr_neto"
+            name="vr_neto"
+            placeholder="Vr neto"
+            tabindex="3"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="estado">Estado</label><br />
+          <input
+            type="number"
+            id="estado"
+            name="estado"
+            placeholder="Activo"
+            tabindex="3"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <button type="submit">Guardar</button>
+          <button type="reset">Cancelar</button>
+        </form>
+        <br/>
+        <a href="insumos.html"><button>Regresar</button></a><br/><br/>
+      </fieldset>
+      
+    </section>
+  </body>
+</html>

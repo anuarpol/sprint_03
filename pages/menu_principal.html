@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- Minified JS library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
     <title>Menu Principal</title>
 </head>
@@ -49,31 +53,77 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   
-                  <li><a class="dropdown-item" href="#">Mision</a></li>
+                  <li><a class="dropdown-item" href="nosotros.html">Mision</a></li>
                   <li><a class="dropdown-item" href="#">Vision</a></li>
                   <li><a class="dropdown-item" href="#">Nuestros clientes</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Contactanos</a></li>
+                  <li><a class="dropdown-item" href="contactanos.html">Contactanos</a></li>
                 </ul>
               </li>
 
 
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-primary" type="submit">Buscar</button>
+              <input class="form-control me-3" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-primary me-2" type="submit">Buscar</button>
+              
+              
+              <a class="btn btn-primary" href="../index.html" role="button">
+              <span class="glyphicon glyphicon-off"></span></a>
+
             </form>
           </div>
         </div>
       </nav>
       
 
-
-
-
+      <div class="container">
+        <h2></h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicadores -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            
+          </ol>
+       
+          <!-- Entorno del carrusel -->
+          <div class="carousel-inner">
+       
+            <div class="item active">
+              <img src="../assets/img/índice.jpg" alt="" class="rounded mx-auto d-block" style="width:100%; height:300px;">
+              <div class="carousel-caption">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+       
+            <div class="item">
+              <img src="../assets/img/cancelar.jpg"  alt="" class="rounded mx-auto d-block" style="width:100%; height: 300px;">
+              <div class="carousel-caption">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>       
+            
+         
+          </div>
+       
+          <!-- Controles izquierda-derecha -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel"  data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
 
       
-      <img src="../assets/img/índice.jpg" class="rounded mx-auto d-block" alt="Responsive image" width="500px">
+      
     <script src="../assets/js/bootstrap.bundle.js"></script>
+ 
 </body>
 </html>
